@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 import json
 import boto3
 import logging
+import sys
 
 BUCKET_NAME = 'blog.tdinvoke.net'
 LOCAL_PATH = r'D:\Projects\red rook\sources\s3\blog-tdinvoke-net'
