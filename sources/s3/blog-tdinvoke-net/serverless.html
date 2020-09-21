@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+<title>
+  
+    Tag: serverless
+  
+</title>
+
+<meta name="description" content="my IT exp and rand">
+<meta property="og:type" content="website">
+<meta property="og:title" content="tdinvoke">
+<meta property="og:url" content="http://blog.tdinvoke.net/tags/serverless/index.html">
+<meta property="og:site_name" content="tdinvoke">
+<meta property="og:description" content="my IT exp and rand">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="Terry Duong">
+<meta property="article:tag" content="Terry Duong">
+<meta property="article:tag" content=" tdinvoke">
+<meta property="article:tag" content=" learn aws">
+<meta property="article:tag" content=" scripting">
+<meta property="article:tag" content=" powershell">
+<meta property="article:tag" content=" lambda">
+<meta property="article:tag" content=" serverless">
+<meta name="twitter:card" content="summary">
+
+
+  <link rel="alternative" href="/atom.xml" title="tdinvoke" type="application/atom+xml">
+
+
+
+  <link rel="icon" href="https://blog.tdinvoke.net/images/favicon.ico">
+
+
+
+<link rel="stylesheet" href="/perfect-scrollbar/css/perfect-scrollbar.min.css">
+
+
+<link rel="stylesheet" href="/styles/main.css">
+
+
+
+
+
+
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+<body
+  
+  >
+  <div class="mobile-header">
+  <button class="sidebar-toggle" type="button">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
+  <a class="title" href="/">tdinvoke</a>
+</div>
+
+  <div class="main-container">
+    <div class="sidebar">
+  <div class="header">
+    <h1 class="title"><a href="/">tdinvoke</a></h1>
+    
+      <div class="description">my IT exp and rand</div>
+    
+    
+    <div class="info">     
+      
+        <div class="avatar">
+          
+            <a href="/about"><img src="https://www.gravatar.com/avatar/3f0fb9274e00579ce067f28956847e40?s=200"></a>
+          
+        </div>
+      
+    </div>
+  </div>
+  <div class="body">
+    
+      
+        <ul class="nav">
+          
+            
+              <li>
+                <a href="/" title="Home" external="false">Home</a>
+              </li>
+            
+          
+            
+              <li>
+                <a href="/about" title="About" external="false">About</a>
+              </li>
+            
+          
+            
+              <li>
+                <a href="https://github.com/tduong10101" title="Github" target="_blank" rel="noopener">Github</a>
+              </li>
+            
+          
+            
+              <li>
+                <a href="/random-podcast" title="Random Podcast" external="false">Random Podcast</a>
+              </li>
+            
+          
+        </ul>
+      
+        <ul class="nav">
+          
+            
+              <li class="tag-list-container">
+                <a href="javascript:;">Tag</a>
+                <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/IAM/" rel="tag">IAM</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/automation/" rel="tag">automation</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/aws/" rel="tag">aws</a><span class="tag-list-count">8</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/cloudfront/" rel="tag">cloudfront</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/command/" rel="tag">command</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ddos/" rel="tag">ddos</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/dota2/" rel="tag">dota2</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ec2/" rel="tag">ec2</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/monitoring/" rel="tag">monitoring</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/netflix/" rel="tag">netflix</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/open-dota-api/" rel="tag">open_dota_api</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/openvpn/" rel="tag">openvpn</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/podcast/" rel="tag">podcast</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/powershell/" rel="tag">powershell</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/quick-post/" rel="tag">quick-post</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/random/" rel="tag">random</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/route53/" rel="tag">route53</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/s3/" rel="tag">s3</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/scom/" rel="tag">scom</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/security/" rel="tag">security</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/serverless/" rel="tag">serverless</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/waf/" rel="tag">waf</a><span class="tag-list-count">1</span></li></ul>
+              </li>
+            
+          
+            
+              <li class="archive-list-container">
+                <a href="javascript:;">Archive</a>
+                <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/">2020</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/">2019</a><span class="archive-list-count">5</span></li></ul>
+              </li>
+            
+          
+            
+              <li>
+                <a href="/archives" title="By Year" external="false">By Year</a>
+              </li>
+            
+          
+        </ul>
+      
+    
+  </div>
+</div>
+
+    <div class="main-content">
+      
+        <div style="max-width: 1000px">
+      
+          <h1>serverless</h1>
+
+
+  
+  
+    <div class="post-list">
+  
+
+    <div class="post-list-item article">
+      <h3 class="article-header">
+        <a href="/2020/09/03/Hosting-a-simple-Code-Editor-on-S3/" >
+  Hosting a simple Code Editor on S3
+</a>
+
+      </h3>
+      
+
+      <div class="article-info">
+        <a href="/2020/09/03/Hosting-a-simple-Code-Editor-on-S3/"><span class="article-date">
+  03-09-2020
+</span>
+</a>
+        
+
+        
+	<span class="article-tag tagcloud">
+		<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/aws/" rel="tag">aws</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/cloudfront/" rel="tag">cloudfront</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/route53/" rel="tag">route53</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/s3/" rel="tag">s3</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/serverless/" rel="tag">serverless</a></li></ul>
+	</span>
+
+
+      </div>
+      <div class="article-entry">
+        
+          <img src="/2020/09/03/Hosting-a-simple-Code-Editor-on-S3/SampleSite.JPG" class="">
+
+<p>I got this old code editor project sitting in github without much description - <a href="https://github.com/tduong10101/codePlayer" target="_blank" rel="noopener">repo link</a>. So I thought why not try to host it on S3 so I could showcase it in the repo.</p>
+<p>Also it’s a good pratice to brush up my knowledge on some of the AWS services (S3, CloudFront, Route53). After almost an hour, I got the site up so it’s not too bad. Below are the steps that I took.</p>
+<ol>
+<li><p>Create a S3 bucket and upload my code to this new bucket - ceditor.tdinvoke.net.</p>
+</li>
+<li><p>Enable “Static website hosting” on the bucket</p>
+ <img src="/2020/09/03/Hosting-a-simple-Code-Editor-on-S3/static-site-s3.JPG" class=""></li>
+<li><p>Create a web CloudFront without following settings (the rest are set with default)</p>
+<ol>
+<li>Origin Domain Name: endpoint url in S3 ceditor.tdinvoke.net ‘Static Website Hosting’</li>
+<li>Alternate Domain Names (CNAMEs): codeplayer.tdinvoke.net</li>
+<li>Viewer Protocol Policy: Redirect HTTP to HTTPS</li>
+<li>SSL Certificate: Custom SSL Certificate - reference my existing SSL certificate</li>
+</ol>
+</li>
+<li><p>Create new A record in Route 53 and point it to the new CloudFront Distributions</p>
+</li>
+</ol>
+<p>Aaand here is the site: <a href="https://codeplayer.tdinvoke.net/" target="_blank" rel="noopener">https://codeplayer.tdinvoke.net/</a></p>
+<p>Next I need to go back to the repo and write up a readme.md for it.</p>
+
+        
+      </div>
+    </div>
+
+  
+    </div>
+  
+
+  
+  
+    <div class="post-list">
+  
+
+    <div class="post-list-item article">
+      <h3 class="article-header">
+        <a href="/2020/09/03/Get-AWS-credentials-report-script/" >
+  Get AWS IAM credentials report script
+</a>
+
+      </h3>
+      
+
+      <div class="article-info">
+        <a href="/2020/09/03/Get-AWS-credentials-report-script/"><span class="article-date">
+  03-09-2020
+</span>
+</a>
+        
+
+        
+	<span class="article-tag tagcloud">
+		<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/IAM/" rel="tag">IAM</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/automation/" rel="tag">automation</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/aws/" rel="tag">aws</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/quick-post/" rel="tag">quick-post</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/serverless/" rel="tag">serverless</a></li></ul>
+	</span>
+
+
+      </div>
+      <div class="article-entry">
+        
+          <p>Quick powershell script to generate and save AWS IAM credentials report to csv format on a local location.</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Import-Module</span> AWSPowerShell</span><br><span class="line"><span class="variable">$reportLocation</span> = <span class="string">"C:\report"</span></span><br><span class="line"><span class="keyword">if</span> (!(<span class="built_in">test-path</span>(<span class="variable">$reportLocation</span>)))&#123;</span><br><span class="line">    <span class="built_in">New-Item</span> -ItemType Directory -Path <span class="variable">$reportLocation</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="variable">$date</span> = <span class="built_in">get-date</span> -Format dd-MM-yy-hh-mm-ss</span><br><span class="line"><span class="variable">$reportName</span> = <span class="string">"aws-credentials-report-<span class="variable">$date</span>.csv"</span></span><br><span class="line"><span class="variable">$reportPath</span> = <span class="built_in">Join-Path</span> -Path <span class="variable">$reportLocation</span> -ChildPath <span class="variable">$reportName</span></span><br><span class="line"><span class="comment"># request iam credential report to be generated</span></span><br><span class="line"><span class="keyword">do</span> &#123;</span><br><span class="line">    <span class="variable">$result</span> = Request-IAMCredentialReport</span><br><span class="line">    <span class="built_in">Start-Sleep</span> -Seconds <span class="number">10</span></span><br><span class="line">&#125; <span class="keyword">while</span> (<span class="variable">$result</span>.State.Value <span class="nomarkup">-notmatch</span> <span class="string">"COMPLETE"</span>)</span><br><span class="line"><span class="comment"># get iam report</span></span><br><span class="line"><span class="variable">$report</span> = Get-IAMCredentialReport -AsTextArray</span><br><span class="line"><span class="comment"># convert to powershell object</span></span><br><span class="line"><span class="variable">$report</span> = <span class="variable">$report</span>|<span class="built_in">ConvertFrom-Csv</span></span><br><span class="line"><span class="comment"># export to set location</span></span><br><span class="line"><span class="variable">$report</span> | <span class="built_in">Export-Csv</span> -Path <span class="variable">$reportPath</span> -NoTypeInformation</span><br></pre></td></tr></table></figure>
+        
+      </div>
+    </div>
+
+  
+    </div>
+  
+
+  
+  
+    <div class="post-list">
+  
+
+    <div class="post-list-item article">
+      <h3 class="article-header">
+        <a href="/2019/09/22/my-random-podcast/" >
+  My random podcast app
+</a>
+
+      </h3>
+      
+
+      <div class="article-info">
+        <a href="/2019/09/22/my-random-podcast/"><span class="article-date">
+  22-09-2019
+</span>
+</a>
+        
+
+        
+	<span class="article-tag tagcloud">
+		<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/aws/" rel="tag">aws</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/podcast/" rel="tag">podcast</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/random/" rel="tag">random</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/serverless/" rel="tag">serverless</a></li></ul>
+	</span>
+
+
+      </div>
+      <div class="article-entry">
+        
+          <img src="/2019/09/22/my-random-podcast/A-0901-Podcast-BBVA-1024x416.jpg" class="">
+<p>I’ve been trying to catch up with a few podcasts and can’t decide  what to listen to first. So I thought, let create an app that could pick out a random episode for me. Less thinking about picking and more time listening!</p>
+<p>So here is what I came up with.</p>
+<img src="/2019/09/22/my-random-podcast/random-podcast.jpg" class="">
+
+<p>I thought it would be straight forward but it took me the whole weekend to get it up T__T</p>
+<p>There are 4 lambda functions in this app.</p>
+<p>1- update-station: trigger whenever a new item is added to stationsDB. This will crawl the site main page to get episode playlist and insert that back to stationsDB as list_url</p>
+<p>2- update-episode: trigger by update-station function or a monthly cloudwatch event. This function will loop through the stationsdb and run the item’s spider fucntion on its list_url. The output would be a list of 50 most recent episodes for each stations. This list would then get compare with all episodes added to episodesDB. The differences would then get added to episodesDB</p>
+<p>3- gen-random-episode: trigger by api gateway when an episode is finished playing at <a href="https://blog.tdinvoke.net/random-podcast/">https://blog.tdinvoke.net/random-podcast/</a>. This funciton would first change the current episode status ‘completed’. Then it would pull out all episodes url from episodeDB that haven’t play (with blank status). Random pick out 1 episode and change its status to current.</p>
+<p>4- get-current-episode: trigger by api gateway when the page <a href="https://blog.tdinvoke.net/random-podcast/">https://blog.tdinvoke.net/random-podcast/</a> is loaded. This one is simple, pull episode with ‘current’ status.</p>
+<p>You can find the codes <a href="https://github.com/tduong10101/td-podcast" target="_blank" rel="noopener">here</a></p>
+<p>To see the app in action, please visit <a href="https://blog.tdinvoke.net/random-podcast/">here</a></p>
+<p>Issues encountered/thoughts:</p>
+<ul>
+<li>Add a UI page to modify the station DB. I’ll have to workout how to put authorisation in API call to add new station.</li>
+<li>Split crawler functions into separate lambda functions which make the functions clean and easy to manage.</li>
+<li>Add more crawler.At the moment, this app only crawl playerfm stations.</li>
+<li>Learnt how to add js scripts to Hexo. There arn’t much information on how to it out there. I had to hack around for awhile. Basically, I need to create a new script folder at thems/‘my-theme’/source/‘td-podcast’. Chuck all my js scripts in there, then modify ‘_partials/scripts.ejs’ to reference the source folder. Learnt a bit of ejs as well.</li>
+<li>Chalice doesn’t have Dynamodb stream trigger, gave up halfway and gone back to create the lambda functions manually.</li>
+<li>Looking into SAM and CloudFormation to do CI/CD on this. </li>
+<li>Could turn this into youtube/twitch random video. Looking into Youtube Google api and Twitch api.</li>
+</ul>
+
+        
+      </div>
+    </div>
+
+  
+    </div>
+  
+
+  
+  
+    <div class="post-list">
+  
+
+    <div class="post-list-item article">
+      <h3 class="article-header">
+        <a href="/2019/09/02/DDOS-my-site/" >
+  AWS WAF automations
+</a>
+
+      </h3>
+      
+
+      <div class="article-info">
+        <a href="/2019/09/02/DDOS-my-site/"><span class="article-date">
+  02-09-2019
+</span>
+</a>
+        
+
+        
+	<span class="article-tag tagcloud">
+		<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/aws/" rel="tag">aws</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ddos/" rel="tag">ddos</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/security/" rel="tag">security</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/serverless/" rel="tag">serverless</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/waf/" rel="tag">waf</a></li></ul>
+	</span>
+
+
+      </div>
+      <div class="article-entry">
+        
+          <img src="/2019/09/02/DDOS-my-site/ddos_teaser.png" class="">
+
+<p>A friend of mine suggested that I should write something about <a href="https://aws.amazon.com/solutions/aws-waf-security-automations/" target="_blank" rel="noopener">AWS WAF security automations</a>. This is mentioned in the <a href="https://d0.awsstatic.com/whitepapers/Security/aws-waf-owasp.pdf" target="_blank" rel="noopener">Use AWS WAF to Mitigate OWASP’s Top 10 Web Application Vulnerabilities</a> whitepaper and there are plenty of materials about this solution on the net. So I thought, instead of writing about what it is / how to set it up, let have some funs ddos my own site and actually see how it works.</p>
+<p>I’m going to try to break my site with 3 different methods.</p>
+<h3 id="1-http-flood-attack"><a href="#1-http-flood-attack" class="headerlink" title="1. http flood attack"></a>1. http flood attack</h3><p>My weapon of choice is <a href="https://github.com/D4Vinci/PyFlooder" target="_blank" rel="noopener">PyFlooder</a>.</p>
+<img src="/2019/09/02/DDOS-my-site/hold-your-tears-1.JPG" class="">
+
+<p>After about 5000 requests, the lambda function started to kick in and blocked my access to the side. I can also see my ip has been blocked on WAF http flood rule.</p>
+<img src="/2019/09/02/DDOS-my-site/403.JPG" class=""> <img src="/2019/09/02/DDOS-my-site/waf-flood.JPG" class="">
+
+<p>I then removed the ip from the blocked list and onto the next attack.</p>
+<h3 id="2-XSS"><a href="#2-XSS" class="headerlink" title="2. XSS"></a>2. XSS</h3><p>Next up is XSS, input a simple <code>&lt;script&gt;</code> tag on to the uri and I got 403 error straight away.</p>
+<img src="/2019/09/02/DDOS-my-site/i-xss-403.JPG" class="">
+
+<h3 id="3-Badbot"><a href="#3-Badbot" class="headerlink" title="3. Badbot"></a>3. Badbot</h3><p>For this method I used <a href="https://scrapy.org/" target="_blank" rel="noopener">scrapy</a>. Wrote a short spider script to crawl my site, targeting the <a href="https://docs.aws.amazon.com/solutions/latest/aws-waf-security-automations/deployment.html#step3" target="_blank" rel="noopener">honeypot url</a>.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> scrapy</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">mySpider</span><span class="params">(scrapy.Spider)</span>:</span></span><br><span class="line">    name=<span class="string">'td-1'</span></span><br><span class="line">    start_urls = [<span class="string">'https://blog.tdinvoke.net'</span>]</span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">parse</span><span class="params">(self, response)</span>:</span></span><br><span class="line">        <span class="keyword">for</span> url <span class="keyword">in</span> response.css(<span class="string">'a::attr("href")'</span>):</span><br><span class="line">            <span class="keyword">yield</span> &#123;<span class="string">'url'</span>: url.extract()&#125;</span><br><span class="line">        <span class="keyword">for</span> next_page <span class="keyword">in</span> response.css(<span class="string">'a[rel="nofollow"]::attr("href")'</span>):</span><br><span class="line">            <span class="keyword">yield</span> response.follow(next_page.extract(), self.parse)</span><br></pre></td></tr></table></figure>
+
+<p>Release the spider!!!!</p>
+<img src="/2019/09/02/DDOS-my-site/i-spider.JPG" class="">
+<p>and got the 403 error as expected.</p>
+<img src="/2019/09/02/DDOS-my-site/403-spider.JPG" class="">
+
+<h3 id="Issues-encountered-thoughts"><a href="#Issues-encountered-thoughts" class="headerlink" title="Issues encountered/thoughts:"></a>Issues encountered/thoughts:</h3><ul>
+<li><p>Setting up the bot wasn’t easy as I expected, but I learnt a lot about scrapy.</p>
+</li>
+<li><p>I accidentally/unknowingly deleted the badbot ip list from the badbot rule. Only found out about the silly mistake by going through the whole pipeline (api gateway -&gt; lambda -&gt; waf ip list -&gt; waf rule) to troubleshoot the issue.</p>
+</li>
+<li><p>PyFlooder is not compatible with windows os. Had to spin up a ubuntu vm to run it.</p>
+</li>
+<li><p>Learnt how to add file to source for Hexo. Not complicated at all, just chuck the file into /source folder. <strong><em>Do not</em></strong> use the <a href="https://www.npmjs.com/package/hexo-generator-robotstxt" target="_blank" rel="noopener">hexo-generator-robotstxt</a> plugin, I almost broken my site because of it.</p>
+</li>
+<li><p>Overall this was an interesting exercise - breaking is always more fun than building!</p>
+</li>
+</ul>
+
+        
+      </div>
+    </div>
+
+  
+    </div>
+  
+
+  
+  
+    <div class="post-list">
+  
+
+    <div class="post-list-item article">
+      <h3 class="article-header">
+        <a href="/2019/08/21/Ti-notification/" >
+  TI9 - Follow my fav team with opendota api, lambda and sns
+</a>
+
+      </h3>
+      
+
+      <div class="article-info">
+        <a href="/2019/08/21/Ti-notification/"><span class="article-date">
+  21-08-2019
+</span>
+</a>
+        
+
+        
+	<span class="article-tag tagcloud">
+		<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/aws/" rel="tag">aws</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/dota2/" rel="tag">dota2</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/open-dota-api/" rel="tag">open_dota_api</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/serverless/" rel="tag">serverless</a></li></ul>
+	</span>
+
+
+      </div>
+      <div class="article-entry">
+        
+          <img src="/2019/08/21/Ti-notification/ti9.jpg" class="">
+
+<p>It’s Dota season of the year, <a href="https://liquipedia.net/dota2/The_International/2019" target="_blank" rel="noopener">The International 9</a>, the biggest esport event on the planet. So I thought I should make a project relate to this event - a notification function that notify me on my favorite team matches.</p>
+<p>This function uses <a href="https://docs.opendota.com/" target="_blank" rel="noopener">opendota api</a>, aws lambda, cloudwatch and sns.  Below is a high level design of the function I put together:</p>
+<img src="/2019/08/21/Ti-notification/Ti_notification.jpg" class="">
+
+<p>Lambda funcion is set to run every 1 hour trigger by CloudWatch. If the function found my favorite team just finish their match, it will sms me the result. Below is the lambda python code and a screen shot of a sms message.</p>
+<img src="/2019/08/21/Ti-notification/phone.jpg" class="">
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">import</span> json</span><br><span class="line"><span class="keyword">from</span> datetime <span class="keyword">import</span> datetime, timedelta</span><br><span class="line"><span class="keyword">import</span> boto3</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">lambda_handler</span><span class="params">(event, context)</span>:</span></span><br><span class="line">uri = <span class="string">'https://api.opendota.com/api/proMatches'</span></span><br><span class="line">response = requests.get(uri)</span><br><span class="line">json_data = json.loads(response.content)</span><br><span class="line">team_name = os.environ[<span class="string">'MY_TEAM'</span>]</span><br><span class="line">league_name = os.environ[<span class="string">'LEAGUE_NAME'</span>]</span><br><span class="line"></span><br><span class="line">filtered_json_data = list()</span><br><span class="line"><span class="keyword">for</span> j <span class="keyword">in</span> json_data:</span><br><span class="line">    <span class="keyword">if</span> j[<span class="string">'radiant_name'</span>] == <span class="literal">None</span> <span class="keyword">or</span> j[<span class="string">'dire_name'</span>] == <span class="literal">None</span>:</span><br><span class="line">            <span class="keyword">continue</span></span><br><span class="line">    check_rad_name = team_name <span class="keyword">in</span> j[<span class="string">'radiant_name'</span>]</span><br><span class="line">    check_dire_name = team_name <span class="keyword">in</span> j[<span class="string">'dire_name'</span>]</span><br><span class="line">    check_tour = league_name <span class="keyword">in</span> j[<span class="string">'league_name'</span>]</span><br><span class="line">    current_time = datetime.now()</span><br><span class="line">    duration = j[<span class="string">'duration'</span>]</span><br><span class="line">    start_time = datetime.fromtimestamp(j[<span class="string">'start_time'</span>])</span><br><span class="line">    end_time = start_time + timedelta(seconds=duration)</span><br><span class="line">    elapsed_time = current_time - end_time</span><br><span class="line">    elapsed_time_cal = divmod(elapsed_time.total_seconds(), <span class="number">60</span>)</span><br><span class="line">    check_time = elapsed_time_cal[<span class="number">0</span>] &lt; <span class="number">60</span></span><br><span class="line">    <span class="keyword">if</span> (check_rad_name <span class="keyword">or</span> check_dire_name) <span class="keyword">and</span> check_tour <span class="keyword">and</span> check_time:</span><br><span class="line">         filtered_json_data.append(j)</span><br><span class="line"></span><br><span class="line"><span class="comment">#print(*filtered_json_data, sep="\n")</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> f <span class="keyword">in</span> filtered_json_data:</span><br><span class="line">    <span class="keyword">if</span> f[<span class="string">'radiant_win'</span>]:</span><br><span class="line">        winner = f[<span class="string">'radiant_name'</span>]</span><br><span class="line">        winner_score = f[<span class="string">'radiant_score'</span>]</span><br><span class="line">        loser = f[<span class="string">'dire_name'</span>]</span><br><span class="line">        loser_score = f[<span class="string">'dire_score'</span>]</span><br><span class="line">        winner_side = <span class="string">"R"</span></span><br><span class="line">        loser_side = <span class="string">"D"</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        winner = f[<span class="string">'dire_name'</span>]</span><br><span class="line">        winner_score = f[<span class="string">'dire_score'</span>]</span><br><span class="line">        loser = f[<span class="string">'radiant_name'</span>]</span><br><span class="line">        loser_score = f[<span class="string">'radiant_score'</span>]</span><br><span class="line">        winner_side = <span class="string">"D"</span></span><br><span class="line">        loser_side = <span class="string">"R"</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> winner <span class="keyword">in</span> team_name:</span><br><span class="line">        message = <span class="string">"&#123;0&#125;(&#123;5&#125;) won against &#123;1&#125;(&#123;6&#125;)\n&#123;0&#125;: &#123;2&#125; - &#123;1&#125;: &#123;3&#125;\nGame duration &#123;4:.0f&#125; minutes"</span>.format(winner, loser, winner_score, loser_score, f[<span class="string">'duration'</span>]/<span class="number">60</span>,winner_side,loser_side)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        message = <span class="string">"&#123;1&#125;(&#123;6&#125;) lost against &#123;0&#125;(&#123;5&#125;)\n&#123;0&#125;: &#123;2&#125; - &#123;1&#125;: &#123;3&#125;\nGame duration &#123;4:.0f&#125; minutes"</span>.format(winner, loser, winner_score, loser_score, f[<span class="string">'duration'</span>]/<span class="number">60</span>,winner_side,loser_side)</span><br><span class="line"></span><br><span class="line">    client = boto3.client(<span class="string">'sns'</span>)</span><br><span class="line">    client.publish(</span><br><span class="line">        TopicArn = os.environ[<span class="string">'SNS_ARN_TOPIC'</span>],</span><br><span class="line">        Message = message</span><br><span class="line">    )</span><br><span class="line"></span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span></span><br></pre></td></tr></table></figure>
+<p>Things could be improved:</p>
+<ul>
+<li>set up full CI/CD</li>
+<li>CloudWatch schedule time to only run when the matches are happenning not 24/7</li>
+<li>UI to select favorite team or hook up with Steam account favorite team</li>
+</ul>
+<p>I’ll comeback on another day to work on this. Got to go watch the game now…</p>
+<p>Let’s go Liquid!</p>
+
+        
+      </div>
+    </div>
+
+  
+    </div>
+  
+
+  
+  
+    <div class="post-list">
+  
+
+    <div class="post-list-item article">
+      <h3 class="article-header">
+        <a href="/2019/08/16/Serverless-blog/" >
+  Serverless Blog
+</a>
+
+      </h3>
+      
+
+      <div class="article-info">
+        <a href="/2019/08/16/Serverless-blog/"><span class="article-date">
+  16-08-2019
+</span>
+</a>
+        
+
+        
+	<span class="article-tag tagcloud">
+		<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/aws/" rel="tag">aws</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/serverless/" rel="tag">serverless</a></li></ul>
+	</span>
+
+
+      </div>
+      <div class="article-entry">
+        
+          <img src="/2019/08/16/Serverless-blog/hexo-logo.png" class="">
+
+<p>So this blog is serverless using combination of hexo, s3, github, codebuild, route53 and cloudfront. My original plan was to build the blog from the ground up with lambda chalice, dynamodb and some hacking with java script. But I thought there got to be someone with the same idea somewhere. One search on google and found two wonderful guides from <a href="https://hackernoon.com/build-a-serverless-production-ready-blog-b1583c0a5ac2" target="_blank" rel="noopener">hackernoon</a> and <a href="https://greengocloud.com/2018/08/28/How-to-Make-a-Fast-and-Cheap-Serverless-Blog/" target="_blank" rel="noopener">greengocloud</a>. Thanks to the guides I was able to spin this up within 4-5 hours. I’m still getting use to Hexo and markdown but feeling pretty good that I got it working.</p>
+<p>I was struggling a bit with git, the theme didn’t get committed properly. Removed Git Submodule sorted the issue out.</p>
+<p>Also CodeBuild didn’t play nice with default role, got to give the role fullS3access to the bucket. It’s working like charm now.</p>
+<p>PS: This blog use <a href="https://github.com/denjones/hexo-theme-chan" target="_blank" rel="noopener">Chan theme</a> by <a href="https://github.com/denjones" target="_blank" rel="noopener">denjones</a></p>
+
+        
+      </div>
+    </div>
+
+  
+    </div>
+  
+
+
+
+
+
+
+          <div class="main-footer">
+  <a href="https://7v6sxhxunb.execute-api.us-east-1.amazonaws.com/ProdStage" target="_blank" rel="nofollow noopener" style="display: none" aria-hidden="true">honeypot link</a>
+  
+    © 2020 tdinvoke
+  
+</div>
+
+      
+        </div>
+      
+    </div>
+  </div>
+  
+<script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+
+
+<script src="/podcast/podcast.js"></script>
+
+
+  
+<link rel="stylesheet" href="/PhotoSwipe/photoswipe.css">
+
+  
+<link rel="stylesheet" href="/PhotoSwipe/default-skin/default-skin.css">
+
+
+  <!-- Root element of PhotoSwipe. Must have class pswp. -->
+  <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe.
+             It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+      <!-- Container that holds slides.
+                PhotoSwipe keeps only 3 of them in the DOM to save memory.
+                Don't modify these 3 pswp__item elements, data is added later on. -->
+      <div class="pswp__container">
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+      </div>
+
+      <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+      <div class="pswp__ui pswp__ui--hidden">
+
+        <div class="pswp__top-bar">
+
+          <!--  Controls are self-explanatory. Order can be changed. -->
+
+          <div class="pswp__counter"></div>
+
+          <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+          <button class="pswp__button pswp__button--share" title="Share"></button>
+
+          <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+          <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+          <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+          <!-- element will get class pswp__preloader--active when preloader is running -->
+          <div class="pswp__preloader">
+            <div class="pswp__preloader__icn">
+              <div class="pswp__preloader__cut">
+                <div class="pswp__preloader__donut"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+          <div class="pswp__share-tooltip"></div>
+        </div>
+
+        <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+
+        <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+
+        <div class="pswp__caption">
+          <div class="pswp__caption__center"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+<script src="/PhotoSwipe/photoswipe.js"></script>
+
+  
+<script src="/PhotoSwipe/photoswipe-ui-default.js"></script>
+
+
+
+
+<script src="/perfect-scrollbar/js/min/perfect-scrollbar.min.js"></script>
+
+
+<script src="/scripts/main.js"></script>
+
+
+</body>
+</html>
